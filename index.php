@@ -14,16 +14,17 @@
         <div id="logo"><a href="http://marcusortiz.com"><img src="img/logo.png" alt="marcusortiz.com" /></a></div>
         <div id="nav">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
         </div>
       </div>
       <div id="content"></div>
     </div>
-    <div id="footer"></div>
+    <div id="footer-top"></div>
+    <div id="footer-bottom"></div>
   </div>
 </div>
 </body>

@@ -41,6 +41,11 @@ html, body {
 h1 { font-size: 36px; }
 h2 { font-size: 24px; }
 
+a, a:visited, a:hover, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
 #background {
   background: transparent url("../img/shadow.png") repeat-x;
   height: 100%;
@@ -54,7 +59,6 @@ h2 { font-size: 24px; }
   width: 960px;
   min-height: 922px;
   margin: 0px auto 0px auto;
-  background-color: #fff;
 }
 
 #top-bar {
@@ -70,13 +74,11 @@ h2 { font-size: 24px; }
   width: 480px;
   height: 100%;
   float: left;
-  background-color: red;
 }
 
 #logo h1 { margin-top: 36px; }
 
 #nav {
-  background-color: #000;
   width: 480px;
   height: 100%;
   float: right;
@@ -94,6 +96,14 @@ h2 { font-size: 24px; }
   font-size: 18px;
   font-weight: bold;
   vertical-align: middle;
-  background-color: blue;
-  border: 1px solid #fff;
+}
+
+#footer-top {
+  height: 225px;
+  background-color: #0f131f;
+}
+
+#footer-bottom {
+  height: 60px;
+  background-color: #040507;
 }
