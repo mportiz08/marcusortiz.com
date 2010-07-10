@@ -66,6 +66,22 @@ a, a:visited, a:hover, a:active {
   height: 55px;
 }
 
+#links {
+  width: 960px;
+  height: 100%;
+  margin: 0px auto 0px auto;
+}
+
+#links ul {
+  float: right;
+  margin-top: 18px;
+}
+
+#links li {
+  display: inline;
+  padding-left: 5px;
+}
+
 #main-nav {
   height: 108px;
 }
