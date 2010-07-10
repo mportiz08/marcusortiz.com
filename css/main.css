@@ -98,6 +98,10 @@ a, a:visited, a:hover, a:active {
   vertical-align: middle;
 }
 
+#banner img {
+  border: 5px solid #fff;
+}
+
 #footer-top {
   height: 225px;
   background-color: #0f131f;

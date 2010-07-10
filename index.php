@@ -21,7 +21,9 @@
           </ul>
         </div>
       </div>
-      <div id="content"></div>
+      <div id="content">
+        <div id="banner"><img src="img/banner.jpg" alt="test banner" /></div>
+      </div>
     </div>
     <div id="footer-top"></div>
     <div id="footer-bottom"></div>
