@@ -47,9 +47,15 @@
         <div id="banner"><img src="img/banner.jpg" alt="test banner" /></div>
         <div id="banner-shadow"></div>
         <div id="blocks">
-          <div class="column" id="left"></div>
-          <div class="column" id="middle"></div>
-          <div class="column" id="right"></div>
+          <div class="column" id="left">
+            <div class="title"><h2>About Me</h2></div>
+          </div>
+          <div class="column" id="middle">
+            <div class="title"><h2>Info</h2></div>
+          </div>
+          <div class="column" id="right">
+            <div class="title"><h2>Contact</h2></div>
+          </div>
         </div>
       </div>
     </div>

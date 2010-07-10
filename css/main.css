@@ -153,21 +153,35 @@ a, a:visited, a:hover, a:active {
 #blocks .column {
   background-color: #1d202a;
   height: 100%;
-  width: 30%;
+  width: 291px;
 }
 
-#blocks #left {
+#blocks .title {
+  height: 26px;
+  padding: 10px 50px 10px 50px;
+}
+
+#blocks .title h2 {
+  font-weight: bold;
+  font-family: arial;
+}
+
+#left {
   float: left;
 }
 
-#blocks #middle {
+#middle {
   float: left;
-  margin-left: 48px;
+  margin-left: 20px;
 }
 
-#blocks #right {
+#right {
   float: right;
 }
+
+#left .title { background: #3b455e url("../img/aboutme.png") no-repeat; }
+#middle .title { background: #3b455e url("../img/info.png") no-repeat; }
+#right .title { background: #3b455e url("../img/contact.png") no-repeat; }
 
 #footer-top {
   height: 225px;
