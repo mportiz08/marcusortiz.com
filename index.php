@@ -41,7 +41,11 @@
       </div>
     </div>
     <div id="footer-top"></div>
-    <div id="footer-bottom"></div>
+    <div id="footer-bottom">
+      <div class="wrapper">
+        <div id="copyright">&copy; 2010 Marcus Ortiz</div>
+      </div>
+    </div>
   </div>
 </div>
 </body>
