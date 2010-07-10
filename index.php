@@ -10,6 +10,7 @@
   <div id="container">
     <div id="top-bar">
       <div class="wrapper">
+        <div id="song"><img src="img/itunes.png" />&nbsp;<?php include "scripts/song.php"; ?></div>
         <div id="links">
           <ul>
             <li><a href="http://facebook.com/marcusortiz"><img src="img/icon_facebook.png" /></a></li>

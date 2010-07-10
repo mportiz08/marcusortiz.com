@@ -61,9 +61,7 @@ a, a:visited, a:hover, a:active {
 }
 
 #main-wrapper {
-  /*width: 960px;*/
   min-height: 922px;
-  /*margin: 0px auto 0px auto;*/
 }
 
 #top-bar {
@@ -71,8 +69,16 @@ a, a:visited, a:hover, a:active {
   height: 55px;
 }
 
+#song {
+  float: left;
+  font-size: 12px;
+  color: #6a7796;
+  margin-top: 18px;
+}
+
 #links {
   height: 100%;
+  float: right;
 }
 
 #links ul {
