@@ -34,7 +34,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 html, body {
  background: #333949 url("../img/bg.png") repeat-x;
  color: #fff;
- font-family: "Helvetica Neue", helvetica, sans-serif;
+ font-family: verdana, arial, sans-serif;
  height: 100%;
 }
 
@@ -46,6 +46,11 @@ a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+.wrapper {
+  width: 960px;
+  margin: 0px auto 0px auto;
+}
+
 #background {
   background: transparent url("../img/shadow.png") repeat-x;
   height: 100%;
@@ -55,10 +60,10 @@ a, a:visited, a:hover, a:active {
   margin: 0px auto 0px auto;
 }
 
-#wrapper {
-  width: 960px;
+#main-wrapper {
+  /*width: 960px;*/
   min-height: 922px;
-  margin: 0px auto 0px auto;
+  /*margin: 0px auto 0px auto;*/
 }
 
 #top-bar {
@@ -67,9 +72,7 @@ a, a:visited, a:hover, a:active {
 }
 
 #links {
-  width: 960px;
   height: 100%;
-  margin: 0px auto 0px auto;
 }
 
 #links ul {
