@@ -61,7 +61,7 @@ a, a:visited, a:hover, a:active {
 }
 
 #main-wrapper {
-  min-height: 922px;
+  min-height: 960px;
 }
 
 #top-bar {
@@ -142,6 +142,31 @@ a, a:visited, a:hover, a:active {
 #banner-shadow {
   background: transparent url("../img/banner_shadow.png") no-repeat;
   height: 41px;
+}
+
+#blocks {
+  background-color: #232631;
+  height: 359px;
+  padding: 25px;
+}
+
+#blocks .column {
+  background-color: #1d202a;
+  height: 100%;
+  width: 30%;
+}
+
+#blocks #left {
+  float: left;
+}
+
+#blocks #middle {
+  float: left;
+  margin-left: 48px;
+}
+
+#blocks #right {
+  float: right;
 }
 
 #footer-top {

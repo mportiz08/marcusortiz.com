@@ -46,6 +46,11 @@
       <div id="content">
         <div id="banner"><img src="img/banner.jpg" alt="test banner" /></div>
         <div id="banner-shadow"></div>
+        <div id="blocks">
+          <div class="column" id="left"></div>
+          <div class="column" id="middle"></div>
+          <div class="column" id="right"></div>
+        </div>
       </div>
     </div>
     <div id="footer-top"></div>
