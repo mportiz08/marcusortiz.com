@@ -98,6 +98,18 @@ a, a:visited, a:hover, a:active {
   vertical-align: middle;
 }
 
+#nav li a {
+  color: #626876;
+}
+
+#nav li:hover {
+  background-color: #161920;
+}
+
+#nav li:hover a {
+  color: #fff;
+}
+
 #banner img {
   border: 5px solid #fff;
 }
