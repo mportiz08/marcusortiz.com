@@ -45,6 +45,7 @@
       </div>
       <div id="content">
         <div id="banner"><img src="img/banner.jpg" alt="test banner" /></div>
+        <div id="banner-shadow"></div>
       </div>
     </div>
     <div id="footer-top"></div>

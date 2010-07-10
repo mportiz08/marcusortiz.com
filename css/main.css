@@ -139,6 +139,11 @@ a, a:visited, a:hover, a:active {
   border: 5px solid #fff;
 }
 
+#banner-shadow {
+  background: transparent url("../img/banner_shadow.png") no-repeat;
+  height: 41px;
+}
+
 #footer-top {
   height: 225px;
   background-color: #0f131f;
