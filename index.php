@@ -13,8 +13,8 @@
         <div id="song">
           <img src="img/itunes.png" />&nbsp;
           <?php 
-          require "scripts/song.php";
-          getSong("scripts/lastfm.key");
+            require "scripts/song.php";
+            getSong("scripts/lastfm.key");
           ?>
         </div>
         <div id="links">
@@ -49,9 +49,19 @@
         <div id="blocks">
           <div class="column" id="left">
             <div class="title"><h2>About Me</h2></div>
+            <p align="center"><img src="img/me.jpg" alt="me" /></p>
+            <p>I'm a college student studying Computer Science in Cal Poly San Luis Obispo.</p>
           </div>
           <div class="column" id="middle">
-            <div class="title"><h2>Info</h2></div>
+            <div class="title"><h2>Twitter</h2></div>
+            <div id="twitter-column">
+              <p>
+                <?php
+                  require "scripts/tweet.php";
+                  getTweet();
+                ?>
+              </p>
+            </div>
           </div>
           <div class="column" id="right">
             <div class="title"><h2>Contact</h2></div>

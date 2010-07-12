@@ -156,6 +156,11 @@ a, a:visited, a:hover, a:active {
   width: 291px;
 }
 
+#blocks .column p {
+  margin: 25px;
+  font-size: 14px;
+}
+
 #blocks .title {
   height: 26px;
   padding: 10px 50px 10px 50px;
@@ -164,6 +169,13 @@ a, a:visited, a:hover, a:active {
 #blocks .title h2 {
   font-weight: bold;
   font-family: arial;
+}
+
+#twitter-column {
+  background: transparent url("../img/twitterbubble.png") no-repeat;
+  height: 100%;
+  padding-top: 50px;
+  margin-top: 25px;
 }
 
 #left {
