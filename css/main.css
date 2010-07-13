@@ -40,6 +40,8 @@ html, body {
 
 h1 { font-size: 36px; }
 h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 12px; }
 
 a, a:visited, a:hover, a:active {
   color: #fff;
@@ -158,7 +160,8 @@ a, a:visited, a:hover, a:active {
 
 #blocks .column p {
   margin: 25px;
-  font-size: 14px;
+  font-size: 12px;
+  color: #6a7796;
 }
 
 #blocks .title {
@@ -178,22 +181,46 @@ a, a:visited, a:hover, a:active {
   margin-top: 25px;
 }
 
-#left {
+#aboutme {
   float: left;
 }
 
-#middle {
+#aboutme img {
+  border: 5px solid #fff;
+}
+
+#twitter {
   float: left;
   margin-left: 20px;
 }
 
-#right {
+#contact {
   float: right;
 }
 
-#left .title { background: #3b455e url("../img/aboutme.png") no-repeat; }
-#middle .title { background: #3b455e url("../img/info.png") no-repeat; }
-#right .title { background: #3b455e url("../img/contact.png") no-repeat; }
+.contact-option {
+  padding-left: 48px;
+  margin: 25px;
+  color: #6a7796;
+  font-size: 12px;
+  min-height: 30px;
+  line-height: 15px;
+  font-family: arial, sans-serif;
+}
+
+.contact-option h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+
+#contact-phone { background: transparent url("../img/icon_phone.png") no-repeat; }
+#contact-email { background: transparent url("../img/icon_email.png") no-repeat; }
+#contact-skype { background: transparent url("../img/icon_skype.png") no-repeat; }
+
+#aboutme .title { background: #3b455e url("../img/aboutme.png") no-repeat; }
+#twitter .title { background: #3b455e url("../img/info.png") no-repeat; }
+#contact .title { background: #3b455e url("../img/contact.png") no-repeat; }
 
 #footer-top {
   height: 225px;

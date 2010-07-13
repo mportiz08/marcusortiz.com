@@ -47,12 +47,12 @@
         <div id="banner"><img src="img/banner.jpg" alt="test banner" /></div>
         <div id="banner-shadow"></div>
         <div id="blocks">
-          <div class="column" id="left">
+          <div class="column" id="aboutme">
             <div class="title"><h2>About Me</h2></div>
             <p align="center"><img src="img/me.jpg" alt="me" /></p>
             <p>I'm a college student studying Computer Science in Cal Poly San Luis Obispo.</p>
           </div>
-          <div class="column" id="middle">
+          <div class="column" id="twitter">
             <div class="title"><h2>Twitter</h2></div>
             <div id="twitter-column">
               <p>
@@ -63,8 +63,20 @@
               </p>
             </div>
           </div>
-          <div class="column" id="right">
+          <div class="column" id="contact">
             <div class="title"><h2>Contact</h2></div>
+            <div class="contact-option" id="contact-phone">
+              <h4>Phone</h4>
+              (123) 456-7890
+            </div>
+            <div class="contact-option" id="contact-email">
+              <h4>Email</h4>
+              mportiz08[at]gmail.com
+            </div>
+            <div class="contact-option" id="contact-skype">
+              <h4>Skype</h4>
+              marcus.ortiz
+            </div>
           </div>
         </div>
       </div>
