@@ -18,8 +18,19 @@ function getTweet()
   }
   else
   {
-    //var_dump($response);
-    echo $response[0]["text"];
+    $tweet = $response[0]["text"];
+    $tweet = auto_link($tweet);
+    
+    echo $tweet;
   }
+}
+
+function auto_link($text)
+{
+  $pattern = "/(((http[s]?:\/\/)|(www\.))?(([a-z][-a-z0-9]+\.)?[a-z][-a-z0-9]+\.[a-z]+(\.[a-z]{2,2})?)\/?[a-z0-9._\/~#&=;%+?-]+[a-z0-9\/#=?]{1,1})/is";
+  $text = preg_replace($pattern, " <a href='$1'>$1</a>", $text);
+  $text = preg_replace("/href=\"www/", "href=\"http://www", $text);
+  
+  return $text;
 }
 ?>
