@@ -20,5 +20,14 @@ module LastFM
     def now_playing?(song_hash)
       song_hash.has_key?("@attr") ? true : false
     end
+    
+    def put_last_song
+      song = last_song
+      toggle = "off"
+      status = "was listening to "
+      toggle = "on" if now_playing?(song)
+      status = "listening to " if now_playing?(song)
+      "<img src=\"/images/speaker_#{toggle}.png\" /><h4>#{status}<strong>#{song["name"]}</strong> by <strong>#{song["artist"]["#text"]}</strong></h4>"
+    end
   end
 end
