@@ -28,7 +28,7 @@ module LastFM
       status = "was listening to "
       toggle = "on" if now_playing?(song)
       status = "listening to " if now_playing?(song)
-      "<a href=\"http://last.fm/user/#{@username}\"><img src=\"/images/speaker_#{toggle}.png\" /></a><h4>#{status}<strong><a href=\"#{song["url"]}\">#{song["name"]}</a></strong> by <strong><a href=\"http://last.fm/music/#{CGI.escape(song["artist"]["#text"])}\">#{song["artist"]["#text"]}</a></strong></h4>"
+      "<a href=\"http://last.fm/user/#{@username}\" target=\"_blank\"><img src=\"/images/speaker_#{toggle}.png\" /></a><h4>#{status}<strong><a href=\"#{song["url"]}\" target=\"_blank\">#{song["name"]}</a></strong> by <strong><a href=\"http://last.fm/music/#{CGI.escape(song["artist"]["#text"])}\" target=\"_blank\">#{song["artist"]["#text"]}</a></strong></h4>"
     end
   end
 end

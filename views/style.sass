@@ -43,7 +43,7 @@ $light_gray: #e7e7e7
 $grayish: #aaa
 
 html, body
-  color: #333
+  color: $grayish
   height: 100%
   background:
     color: #fff
@@ -64,7 +64,7 @@ h4
     size: 24px
     
 a, a:hover, a:visited, a:active
-  color: #fff
+  color: #333
   text:
     decoration: none
     
@@ -99,6 +99,9 @@ a, a:hover, a:visited, a:active
     color: rgba(0, 0, 0, 0.5)
   border:
     bottom: 1px solid #000
+    
+#header a
+  color: #fff
     
 #header .content
   @extend .wrapper
@@ -147,3 +150,26 @@ a, a:hover, a:visited, a:active
   
 #bottom .content a
   color: $light_red
+  
+#footer
+  @extend .wrapper
+  padding: 20px 0
+  margin-top: 50px
+  text:
+    align: center
+  letter:
+    spacing: 2px
+    
+#footer a
+  color: #000
+  font:
+    weight: bold
+  
+#footer a.sinatra:hover
+  color: #6d6d6d
+  
+#footer a.haml:hover
+  color: #ff3836
+  
+#footer a.sass:hover
+  color: #ce4dd6
