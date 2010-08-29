@@ -46,7 +46,7 @@ html, body
   color: #333
   height: 100%
   background:
-    color: $light_gray
+    color: #fff
   font:
     family: "Helvetica Neue", helvetica, sans-serif
     
@@ -131,4 +131,18 @@ a, a:hover, a:visited, a:active
   width: 910px
   font:
     size: 16px
+
+#bottom .content
+  @extend .wrapper
+  padding: 50px 0
   
+#bottom li h2
+  float: right
+  width: 500px
+  color: $light_red
+  text:
+    align: right
+    shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+  line:
+    height: 48px
+    spacing: -0.025em
