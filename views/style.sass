@@ -120,10 +120,8 @@ a, a:hover, a:visited, a:active
     height: 48px
     spacing: -0.025em
     
-#top h4
+#top h4, #bottom h4
   @extend .small_header
-  line:
-    height: 26px
     
 #header h4
   @extend .small_header
@@ -131,18 +129,21 @@ a, a:hover, a:visited, a:active
   width: 910px
   font:
     size: 16px
+    
+#top .content h4
+  line:
+    height: 26px
+    
+#bottom .content h4
+  color: $dark_red
+  line:
+    height: 50px
+  text:
+    align: right
 
 #bottom .content
   @extend .wrapper
   padding: 50px 0
   
-#bottom li h2
-  float: right
-  width: 500px
+#bottom .content a
   color: $light_red
-  text:
-    align: right
-    shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
-  line:
-    height: 48px
-    spacing: -0.025em
