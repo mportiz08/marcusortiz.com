@@ -1,11 +1,13 @@
 require 'rubygems'
-#require 'sinatra'
+require 'vendor/sinatra/lib/sinatra.rb'
 require 'haml'
 require 'sass'
 require 'open-uri'
 
 require 'models/last_fm'
 
+set :run, false
+set :environment, :production
 set :haml, { :format => :html5 }
 
 LAST_FM = LastFM::User.new("chipitople")
