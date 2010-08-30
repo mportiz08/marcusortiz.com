@@ -19,12 +19,14 @@
         .content
           .message
             %h1
-              Hi, my name is Marcus Ortiz.
+              Hi, my name is 
+              %a{:href => '/'}
+                Marcus Ortiz.
             %h4
               I like to write code, play music, and swing racquets at tennis balls.
           #code-snippet
             %pre
-              %a{:href => '#'}
+              %a{:href => '/project/latest'}
                 %code
                   = @snippet
           .clear
