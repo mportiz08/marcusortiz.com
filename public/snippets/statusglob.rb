@@ -2,6 +2,6 @@
 def project
   @project = Project.new({
     :name   => "statusglob",
-    :status => "beta"
+    :status => "pre-alpha"
   })
 end
