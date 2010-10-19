@@ -4,19 +4,24 @@ require 'haml'
 require 'sass'
 require 'open-uri'
 
+require 'helpers'
 require 'models/last_fm'
 
 set :run, false
 set :environment, :production
 set :haml, { :format => :html5 }
 
+include Helpers
+
 LAST_FM = LastFM::User.new("chipitople")
-PROJECTS = ["statusglob"]
+PROJECTS = ["techstori", "statusglob"]
+PORTFOLIO = Helpers.get_snippet("portfolio.rb")
 
 get '/' do
   @ie_hack = IEHack.get
   @song = LAST_FM.put_last_song
-  @snippet = get_snippet("index.rb")
+  @name = 'latest'
+  @snippet = PORTFOLIO
   haml :index
 end
 
@@ -25,28 +30,22 @@ get '/application.css' do
   sass :style
 end
 
-get '/project/:name' do |name|
+get '/projects' do
+  @song = LAST_FM.put_last_song
+  @snippet = PORTFOLIO
+  haml :projects
+end
+
+get '/projects/:name' do |name|
   @name = name
   raise Sinatra::NotFound if (@name != "latest") && !(PROJECTS.include? @name)
   @song = LAST_FM.put_last_song
-  @snippet = get_snippet("#{@name}.rb")
-  
-  if name.eql? "latest"
-    @name = latest_project
-    @snippet = get_snippet("#{@name}.rb")
-    haml "project_#{@name}".downcase.to_sym
-  else
-    haml "project_#{@name}".downcase.to_sym
-  end
+  @snippet = PORTFOLIO
+  haml "project_#{@name}".downcase.to_sym
 end
 
 def latest_project
   PROJECTS.last
-end
-
-def get_snippet(filename)
-  path = "public/snippets/#{filename}"
-  File.exists?(path) ? open("public/snippets/#{filename}").read : ""
 end
 
 module IEHack
