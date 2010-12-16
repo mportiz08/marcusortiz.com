@@ -1,5 +1,4 @@
 require 'rubygems'
-#require 'vendor/sinatra/lib/sinatra.rb'
 require 'bundler/setup'
 require 'sinatra'
 require 'haml'
