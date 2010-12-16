@@ -12,6 +12,7 @@ require 'models/last_fm'
 set :run, false
 set :environment, :production
 set :views, File.dirname(__FILE__) + "/views"
+set :public, File.dirname(__FILE__) + "/public"
 set :haml, { :format => :html5 }
 
 include Helpers
