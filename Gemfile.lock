@@ -1,0 +1,12 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    haml (3.0.24)
+    sass (3.1.0.alpha.200)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  haml
+  sass
