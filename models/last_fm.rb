@@ -5,7 +5,8 @@ require 'yaml'
 
 module LastFM
   API_URL  = "http://ws.audioscrobbler.com/2.0/"
-  API_KEY  = YAML::load(File.open(File.join(File.dirname(__FILE__), '..', 'config', 'app.yml')))["last_fm"]["api_key"]
+  #API_KEY  = YAML::load(File.open(File.join(File.dirname(__FILE__), '..', 'config', 'app.yml')))["last_fm"]["api_key"]
+  API_KEY = ENV['last_fm_api_key']
   API_ARGS = "&format=json&api_key=#{API_KEY}"
   
   class User
