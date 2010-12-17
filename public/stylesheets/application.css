@@ -177,6 +177,9 @@ code {
 #footer a.sass:hover {
   color: #ce4dd6; }
 
+#footer a.heroku:hover {
+  color: #7565c7; }
+
 #project img {
   padding: 5px;
   border: 2px solid #aaaaaa; }
