@@ -17,7 +17,7 @@ set :haml, { :format => :html5 }
 include Helpers
 
 LAST_FM = LastFM::User.new("chipitople")
-PROJECTS = ["techstori", "statusglob"]
+PROJECTS = ["techstori", "statusglob", "itunes-cli"]
 PORTFOLIO = Helpers.get_snippet("portfolio.rb")
 
 get '/' do
